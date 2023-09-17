@@ -65,10 +65,7 @@ const initialState = {
   sortOptions: ["latest", "oldest", "a-z", "z-a"],
 };
 
-const BASE_URL =
-  import.meta.env.NODE_ENV === "production"
-    ? import.meta.env.VITE_APP_BACKEND_PROD
-    : import.meta.env.VITE_APP_BACKEND_DEV;
+const BASE_URL = "https://jopify-api.onrender.com/api/v1";
 
 const AppContext = React.createContext();
 

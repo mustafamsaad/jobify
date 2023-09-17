@@ -6,7 +6,7 @@ import "./index.css";
 import { AppProvider } from "./context/appContext.jsx";
 import { disableReactDevTools } from "@fvilers/disable-react-devtools";
 
-if ((import.meta.env.NODE_ENV === "production") === "production") {
+if (import.meta.env.NODE_ENV === "production") {
   disableReactDevTools();
 }
 
